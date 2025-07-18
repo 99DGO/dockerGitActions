@@ -1,0 +1,11 @@
+name: dockerBuild
+run-name: ${{ github.actor }} is building dockerBuild
+on: [push]
+jobs:
+  createDockerFile:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event. :)"
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+  buildDocker:
+    runs-on:
