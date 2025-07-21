@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: 99DGO/create-a-file-action@master
+      - uses: 99DGO/Create-A-File-Modified@master
         with:
           path: $GITHUB_WORKSPACE
           file: 'try2.txt'
