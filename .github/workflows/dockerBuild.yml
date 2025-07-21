@@ -15,9 +15,8 @@ jobs:
           sudo apt-get install -y python3 python3-pip
       - name: Create Dockerfile
         run: |
-          python
-          with open("crow.txt", "w") as f:
-            f.write("crows")
+          python dockerFileCreator.py
+          
       # - uses: actions/checkout@v2
       # - uses: 99DGO/Create-A-File-Modified@master
       #   with:
