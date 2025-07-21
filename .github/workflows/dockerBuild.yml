@@ -13,9 +13,7 @@ jobs:
         with:
           path: $GITHUB_WORKSPACE
           file: 'try2.txt'
-          content: |
-            Hello
-            World
+          content: "This is a test file created by the create-a-file-action."
 
 
   # buildDocker:
